@@ -1,81 +1,63 @@
-*,
-body,
-html {
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-	box-sizing: border-box;
-
+/* Reset & basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: rgb(27, 27, 27);
+  background-color: rgb(27, 27, 27);
   color: white;
+  font-family: sans-serif;
   line-height: 1.5;
 }
 
+/* Table styling */
 table {
-	height: 40%;
-  left: 10%;
   margin: 20px auto;
-	background-color: rgb(39, 39, 39);
-  position: static;
-  width: 100%;
+  width: 90%;
+  background-color: rgb(39, 39, 39);
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-caption{
+caption {
+  caption-side: top;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 th, td {
-  text-align: middle;
-  vertical-align:middle;
-}
-
-td {
-  padding: 20px;
-}
-
-th {
-  font-size: 18px;
-  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
   padding: 20px;
 }
 
 td img {
-	max-width: 200px;
-	max-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   width: auto;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-thead th {
+tfoot {
+  font-style: italic;
+  text-align: center;
   padding: 10px;
 }
 
-tfoot{
-  font-style: italic;
-}
-
-.s {
-	background-color: rgb(236, 111, 111);
-}
-.a {
-	background-color: rgb(236, 178, 111);
-}
-.b {
-	background-color: rgb(236, 234, 111);
-}
-.c {
-	background-color: rgb(121, 236, 111);
-}
-.d {
-	background-color: rgb(111, 236, 219);
-}
-.f {
-	background-color: rgb(155, 111, 236);
-}
+/* Tier colors */
+.s { background-color: rgb(236, 111, 111); }
+.a { background-color: rgb(236, 178, 111); }
+.b { background-color: rgb(236, 234, 111); }
+.c { background-color: rgb(121, 236, 111); }
+.d { background-color: rgb(111, 236, 219); }
+.f { background-color: rgb(155, 111, 236); }
